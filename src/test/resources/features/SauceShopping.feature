@@ -1,9 +1,9 @@
 @login
-Feature: Shopping succesfully
+Feature: Shopping successfully
   Background:
     Given the user the login page
 
-  Scenario Outline: Shopping with valid credentials
+  Scenario Outline: Shopping with valid credentials (positive)
     When the user logs in valid "<username>" and "<password>"
     Then the user is on the product page
     And the user arranges the page according to the "<priceRequirement>"
@@ -31,11 +31,11 @@ Feature: Shopping succesfully
     | locked_out_user | secret_sauce | Price (high to low) |
 
 
-  Scenario: Logging with invalid username
+  Scenario: Logging with invalid username (negative)
     When the user logs in invalid "locked_out_user" and "secret_sauce"
     And  the warning message is visible to the user
 
-  Scenario: Logging with invalid password
+  Scenario: Logging with invalid password (negative)
     When the user logs in invalid "standard_user" and "drt43_9iok7"
     And different warning message is visible to the user
 
