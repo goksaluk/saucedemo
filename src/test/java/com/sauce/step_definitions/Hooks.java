@@ -27,7 +27,7 @@ public class Hooks {
         if (scenario.isFailed()){
             System.out.println("Test failed");
             byte[] screenshot = ((TakesScreenshot)Driver.get()).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot, "image/png");
+            scenario.attach(screenshot,"image/png","screenshot");
 
         }else {
             System.out.println("Cleanup!");

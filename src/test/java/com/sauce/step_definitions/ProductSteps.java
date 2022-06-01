@@ -15,7 +15,7 @@ public class ProductSteps {
     @Then("the user is on the product page")
     public void the_user_is_on_the_product_page() {
         productsPage.getPageTitle();
-        Assert.assertEquals("Products", productsPage.getPageTitle());
+        Assert.assertEquals("PRODUCTS", productsPage.getPageTitle());
     }
 
     @Then("the user arranges the page according to the {string}")
@@ -29,17 +29,10 @@ public class ProductSteps {
         productsPage.addTwoProductsToChart();
     }
 
-//    @When("the user is on the cart page")
-//    public void the_user_on_the_chart_page() {
-//        productsPage.clickCartIcon();
-//        Assert.assertEquals("Your Cart", cartPage.getPageTitle());
-//    }
-
-
     @Then("the user continues to shop by adding two more products")
     public void the_user_continues_to_shopping_by_adding_two_more_products() {
         cartPage.clickContinueShoppingButton();
-        Assert.assertEquals("Products", productsPage.getPageTitle());
+        Assert.assertEquals("PRODUCTS", productsPage.getPageTitle());
         productsPage.addTwoMoreProductsToChart();
         productsPage.clickCartIcon();
     }

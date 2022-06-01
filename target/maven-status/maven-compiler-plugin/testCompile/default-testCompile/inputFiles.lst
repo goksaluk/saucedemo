@@ -1,3 +1,4 @@
+/Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/pages/CheckoutPage.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/step_definitions/CheckoutOverviewSteps.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/step_definitions/CheckoutSteps.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/runners/FailedRunner.java
@@ -10,9 +11,9 @@
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/pages/CartPage.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/pages/LoginPage.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/runners/RegressionRunner.java
+/Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/pages/CompletePage.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/step_definitions/CartSteps.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/runners/CukesRunner.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/pages/CheckoutOverview.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/utilities/Driver.java
-/Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/pages/CkecoutPage.java
 /Users/goksalcavdar/IdeaProjects/saucedemo/src/test/java/com/sauce/pages/ProductsPage.java

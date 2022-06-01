@@ -12,7 +12,7 @@ public class CartPage extends BasePage {
     @FindBy(id = "remove-sauce-labs-backpack")
     public WebElement removeButtonForBackpack;
 
-    @FindBy(css = "[class='cart_item'']")
+    @FindBy(css = "[class='cart_item']")
     public List<WebElement> cartIttems;
 
     @FindBy(id = "continue-shopping")

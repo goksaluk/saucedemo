@@ -18,6 +18,9 @@ public class CheckoutPage extends BasePage {
     @FindBy(id = "continue")
     public  WebElement continueButton;
 
+    @FindBy(id = "back-to-products")
+    public  WebElement backhomeButton;
+
 
 
     public void enterCredentials(){
@@ -29,6 +32,10 @@ public class CheckoutPage extends BasePage {
 
     public void clickContinueButton(){
         continueButton.click();
+    }
+
+    public void clickBackhomeButton(){
+        backhomeButton.click();
     }
 
 

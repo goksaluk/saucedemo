@@ -20,15 +20,15 @@ Feature: Shopping successfully
     Then the user is on the product page
 
     Examples:
-    |    username     |   password   | priceRequirement    |
-    | standard_user   | secret_sauce | Name (A to Z)       |
-    | standard_user   | secret_sauce | Name (Z to A)       |
-    | standard_user   | secret_sauce | Price (low to high) |
-    | standard_user   | secret_sauce | Price (high to low) |
-    | locked_out_user | secret_sauce | Name (A to Z)       |
-    | locked_out_user | secret_sauce | Name (Z to A)       |
-    | locked_out_user | secret_sauce | Price (low to high) |
-    | locked_out_user | secret_sauce | Price (high to low) |
+    |    username             |   password   | priceRequirement    |
+    | standard_user           | secret_sauce | Name (A to Z)       |
+    | standard_user           | secret_sauce | Name (Z to A)       |
+    | standard_user           | secret_sauce | Price (low to high) |
+    | standard_user           | secret_sauce | Price (high to low) |
+    | performance_glitch_user | secret_sauce | Name (A to Z)       |
+    | performance_glitch_user | secret_sauce | Name (Z to A)       |
+    | performance_glitch_user | secret_sauce | Price (low to high) |
+    | performance_glitch_user | secret_sauce | Price (high to low) |
 
 
   Scenario: Logging with invalid username (negative)
