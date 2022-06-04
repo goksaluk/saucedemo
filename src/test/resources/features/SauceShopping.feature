@@ -1,4 +1,4 @@
-@login
+@sauce
 Feature: Shopping successfully
   Background:
     Given the user the login page
