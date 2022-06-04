@@ -15,7 +15,7 @@ public class CheckoutOverviewSteps {
         Assert.assertEquals("CHECKOUT: OVERVIEW",checkoutOverview.getPageTitle() );
         Assert.assertEquals(numberOfProducts, checkoutOverview.getNumberOfProducts());
         int totalPrice= checkoutOverview.getFirstProductFigure()+checkoutOverview.getSecondProductFigure()+checkoutOverview.getThirdProductFigure();
-        Assert.assertEquals(6797,totalPrice);
+        Assert.assertEquals(checkoutOverview.getTotalPaymentFigure(), totalPrice);
     }
 
     @Then("the user clicks the finish button")

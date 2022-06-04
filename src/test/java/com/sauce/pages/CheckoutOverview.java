@@ -28,7 +28,7 @@ public class CheckoutOverview extends BasePage{
     @FindBy(xpath = "(//*[contains(@class,'Shipping Information:")
     public WebElement shippingInformation;
 
-    @FindBy(css = "[class='summary_total_label']")
+    @FindBy(css = "[class='summary_subtotal_label']")
     public WebElement totalPayment;
 
     @FindBy(id = "finish")
@@ -48,6 +48,11 @@ public class CheckoutOverview extends BasePage{
 
     public int getPrice(String price) {
         int priceFigure= Integer.valueOf(price.substring(1,price.length()).replace(".",""));
+        return priceFigure;
+    }
+
+    public int getTotalPaymentFigure() {
+        int priceFigure= Integer.valueOf(totalPayment.getText().substring(13,totalPayment.getText().length()).replace(".",""));
         return priceFigure;
     }
 

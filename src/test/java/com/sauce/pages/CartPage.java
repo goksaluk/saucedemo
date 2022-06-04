@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartPage extends BasePage {
+public class CartPage extends BasePage  {
 
     @FindBy(id = "remove-sauce-labs-backpack")
     public WebElement removeButtonForBackpack;
@@ -44,9 +44,6 @@ public class CartPage extends BasePage {
         }
         return numberOfProducts.size();
     }
-
-
-
 
 
 }
