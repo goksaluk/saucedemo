@@ -25,14 +25,19 @@ public class LoginSteps {
         loginPage.login(username,password);
     }
 
-    @Given("the warning message is visible to the user")
-    public void the_warning_message_is_visible_to_the_user() {
-        Assert.assertEquals("Epic sadface: Sorry, this user has been locked out.", loginPage.getErrorMessage());
-    }
+//    @Given("the warning message is visible to the user")
+//    public void the_warning_message_is_visible_to_the_user() {
+//        Assert.assertEquals("Epic sadface: Sorry, this user has been locked out.", loginPage.getErrorMessage());
+//    }
+//
+//    @Given("different warning message is visible to the user")
+//    public void different_warning_message_is_visible_to_the_user() {
+//        Assert.assertEquals("Epic sadface: Username and password do not match any user in this service", loginPage.getErrorMessage());
+//    }
 
-    @Given("different warning message is visible to the user")
-    public void different_warning_message_is_visible_to_the_user() {
-        Assert.assertEquals("Epic sadface: Username and password do not match any user in this service", loginPage.getErrorMessage());
+    @Given("the warning {string} is visible to the user")
+    public void the_warning_message_is_visible_to_the_user(String message) {
+        Assert.assertEquals(message, loginPage.getErrorMessage());
     }
 
 }

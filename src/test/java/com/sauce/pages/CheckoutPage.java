@@ -21,6 +21,18 @@ public class CheckoutPage extends BasePage {
     @FindBy(id = "back-to-products")
     public  WebElement backhomeButton;
 
+    @FindBy(linkText = "Contact us")
+    public WebElement contact;
+
+    @FindBy(xpath = "//*[@class='page-subheading']")
+    public WebElement logo;
+
+    public void clickContact() {
+        BrowserUtils.waitForVisibility(contact,3);
+        contact.click();
+        BrowserUtils.waitForVisibility(logo,4);
+    }
+
 
 
     public void enterCredentials(){

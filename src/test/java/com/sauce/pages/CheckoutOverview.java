@@ -57,6 +57,7 @@ public class CheckoutOverview extends BasePage{
     }
 
     public int getFirstProductFigure(){
+
         return getPrice(firstItem.getText());
     }
 

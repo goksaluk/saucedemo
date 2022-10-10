@@ -3,32 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 21730000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user the login page",
-            "match": {
-              "location": "com.sauce.step_definitions.LoginSteps.the_user_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-06-04T19:44:26.998Z",
+        "start_timestamp": "2022-10-10T20:25:38.679Z",
         "before": [
           {
             "result": {
-              "duration": 1382083000,
+              "duration": 5517716000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 24,
-        "name": "Shopping with valid credentials (positive)",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "shopping-successfully;shopping-with-valid-credentials-(positive);;2",
+        "id": "shopping-successfully;",
         "after": [
           {
             "result": {
-              "duration": 110427000,
+              "duration": 142102000,
               "status": "passed"
             },
             "match": {
@@ -52,211 +31,24 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 273630000,
+              "duration": 784590000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user logs in valid \"standard_user\" and \"secret_sauce\"",
+            "line": 4,
+            "name": "test",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 23
-                },
-                {
-                  "val": "\"secret_sauce\"",
-                  "offset": 43
-                }
-              ],
-              "location": "com.sauce.step_definitions.LoginSteps.the_user_logs_in_valid_standard_user_and_secret_sauce(java.lang.String,java.lang.String)"
+              "location": "com.sauce.step_definitions.CheckoutSteps.ttest()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 96272000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user is on the product page",
-            "match": {
-              "location": "com.sauce.step_definitions.ProductSteps.the_user_is_on_the_product_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 66690000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user arranges the page according to the \"Name (A to Z)\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Name (A to Z)\"",
-                  "offset": 44
-                }
-              ],
-              "location": "com.sauce.step_definitions.ProductSteps.the_user_arranges_the_page_according_to_the_Name_A_to_Z(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 123005000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user adds some products to the cart",
-            "match": {
-              "location": "com.sauce.step_definitions.ProductSteps.the_user_adds_some_products_to_the_chart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 88112000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user is on the cart page",
-            "match": {
-              "location": "com.sauce.step_definitions.CartSteps.the_user_on_the_chart_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 48467000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user removes a product from the cart",
-            "match": {
-              "location": "com.sauce.step_definitions.CartSteps.the_user_removes_a_product_from_the_chart()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 222235000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the user continues to shop by adding two more products",
-            "match": {
-              "location": "com.sauce.step_definitions.ProductSteps.the_user_continues_to_shopping_by_adding_two_more_products()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 74727000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the user is on the cart page",
-            "match": {
-              "location": "com.sauce.step_definitions.CartSteps.the_user_on_the_chart_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 76947000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user clicks the checkout button and sees 3 products on the page and click the checkout button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 45
-                }
-              ],
-              "location": "com.sauce.step_definitions.CartSteps.the_user_clicks_to_checkout_button(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 237197000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the user enters their name and post code on the information page",
-            "match": {
-              "location": "com.sauce.step_definitions.CheckoutSteps.the_user_enters_his_her_name_and_post_code_on_the_information_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 116482000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the true payment information and 3 items are visible to the user",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 33
-                }
-              ],
-              "location": "com.sauce.step_definitions.CheckoutOverviewSteps.the_products_purchased_and_the_payment_information_are_visible_to_the_user(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 50348000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user clicks the finish button",
-            "match": {
-              "location": "com.sauce.step_definitions.CheckoutOverviewSteps.the_user_clicks_finish_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 61244000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the complete page is visible to the user and the user clicks the backhome button",
-            "match": {
-              "location": "com.sauce.step_definitions.CartSteps.complete_page_is_visible_to_the_user_the_user_clicks_the_backhome_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 42849000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user is on the product page",
-            "match": {
-              "location": "com.sauce.step_definitions.ProductSteps.the_user_is_on_the_product_page()"
-            },
-            "keyword": "Then "
+            "keyword": "Given "
           }
         ],
         "tags": [
           {
-            "name": "@login"
-          },
-          {
-            "name": "@positive"
+            "name": "@sauce"
           }
         ]
       }
@@ -268,7 +60,7 @@
     "uri": "file:src/test/resources/features/SauceShopping.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@sauce",
         "type": "Tag",
         "location": {
           "line": 1,
